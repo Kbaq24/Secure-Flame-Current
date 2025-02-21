@@ -1,0 +1,143 @@
+/* Reset default margins and paddings */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Global styling */
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Center the game container */
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #1a1a1a, #000000);
+  margin: 0 auto;
+}
+
+/* Main Menu / Start Screen styling */
+#start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#start-screen h1 {
+  font-size: 48px;
+  color: #00FF00;
+  margin-bottom: 20px;
+}
+#start-screen button {
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 10px;
+}
+#start-screen button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+/* In-game text styling */
+#game-text {
+  font-size: 22px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 10px auto;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Button styling for options, hints, etc. */
+.game-button, .hint-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #888888;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  width: 70%;
+}
+
+.game-button {
+  background-color: #444444;
+  color: #FFFFFF;
+}
+.game-button:hover {
+  background-color: #555555;
+  border-color: #AAAAAA;
+  color: #E6E6E6;
+}
+.game-button.correct {
+  background-color: #28a745;
+  border-color: #1e7e34;
+}
+.game-button.incorrect {
+  background-color: #dc3545;
+  border-color: #a71d2a;
+}
+
+.hint-button {
+  background-color: #007BFF;
+  color: #ffffff;
+  border: 2px solid #0056b3;
+  width: 60%;
+}
+.hint-button:hover {
+  background-color: #0056b3;
+  border-color: #003d80;
+  color: #E6E6E6;
+}
+
+/* Transition text (if needed) */
+.transition-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00FF00;
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* Background music control styling (optional) */
+#bg-music-control {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #444444;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#bg-music-control:hover {
+  background-color: #555555;
+  color: #E6E6E6;
+}
+
+
+
+
+  
+
